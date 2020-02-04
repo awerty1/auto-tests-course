@@ -1,4 +1,2 @@
 # auto-tests-course
-homework for the course
-
-hola amigo
+This repository for storing homework on the stepik, link to the course https://stepik.org/course/575.
