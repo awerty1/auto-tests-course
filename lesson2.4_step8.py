@@ -10,13 +10,13 @@ try:
 	link = "http://suninjuly.github.io/explicit_wait2.html"
 	browser.get(link)
 
-	# говорим Selenium проверять в течение 5 секунд, пока кнопка не станет кликабельной
+	# Говорим Selenium проверять в течение 5 секунд, пока кнопка не станет кликабельной
 	WebDriverWait(browser, 12).until(
 			EC.text_to_be_present_in_element((By.ID, "price"), "100")
 		)
 	browser.find_element_by_id("book").click()
 
-	# решаем уравнение
+	# Решаем уравнение
 	def calc(x):
 		return str(math.log(abs(12*math.sin(int(x)))))
 	
@@ -32,7 +32,7 @@ try:
 	browser.find_element_by_id("solve").click()
 	
 finally:
-	# ожидание чтобы визуально оценить результаты прохождения скрипта
+	# Ожидание чтобы визуально оценить результаты прохождения скрипта
 	time.sleep(5)
-	# закрываем браузер после всех манипуляций
+	# Закрываем браузер после всех манипуляций
 	browser.quit()
